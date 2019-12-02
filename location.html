@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mini Project</title>
+  </head>
+  <body>
+  <h1>Mini Project</h1>
+    <script>
+       if (window.navigator.platform == "MacIntel"){
+        alert ("Hello, Mac User!")
+       }
+       if (window.navigator.platform == "Windows") {
+           alert ("Hello, Windows User!")
+       }
+    console.log(window.navigator.platform);    
+
+navigator.geolocation.getCurrentPosition(function(position) {
+console.log(position.coords.latitude, position.coords.longitude);
+
+
+   if (position.coords.latitude > 30 && position.coords.longitude > 90) {
+    window.location.href = "http://www.google.com"
+   }     
+   else if (position.coords.latitude == 30 && position.coords.longitude == 90) {
+    window.location.href = "http://www.aol.com"
+   }
+   else (position.coords.latitude < 30 && position.coords.longitude < 90); {
+    window.location.href = "http://www.bing.com"
+   }
+});
+
+    </script>
+  </body>
+</html>
+
+
+
