@@ -6,3 +6,24 @@ h1 {
 .jumbotron {
     background-color: white;
 }
+
+.menu_drop {
+    color: #232323!important;
+    font-family: bebas_neue;
+}
+
+@font-face {
+    font-family: Broken Heart;
+    src: url(fonts/broken_heart/Broken_Heart.ttf);
+}
+
+@font-face {
+    font-family: bebas_neue;
+    src: url(fonts/bebas_neue/BebasNeue-Regular.ttf);
+}
+
+.name {
+    font-size: 70px;
+    color: #232323;
+    font-family: Broken Heart;
+}
